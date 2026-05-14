@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interview Engine</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #1a1a2e; color: #eee; }
+    h1 { color: #00d4ff; }
+    button { background: #00d4ff; color: #000; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin: 5px; font-size: 16px; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; background: #16213e; color: #eee; border: 1px solid #00d4ff; border-radius: 5px; font-size: 16px; }
+    #question-box { background: #16213e; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #00d4ff; }
+    #feedback-box { background: #0f3460; padding: 15px; border-radius: 10px; margin: 10px 0; }
+    #status { color: #00d4ff; font-weight: bold; }
+    .ended { color: #ff6b6b; }
+  </style>
+</head>
+<body>
+  <h1>🎯 Interview Engine</h1>
+
+  <div id="start-section">
+    <input id="name" placeholder="Your Name" value="Test Candidate" />
+    <input id="role" placeholder="Role" value="Software Engineer" />
+    <button onclick="startInterview()">Start Interview</button>
+  </div>
+
+  <div id="interview-section" style="display:none">
+    <p id="status"></p>
+    <div id="question-box">
+      <h3>Question:</h3>
+      <p id="question-text"></p>
+      <small id="topic-info"></small>
+    </div>
+    <textarea id="answer-input" rows="4" placeholder="Type your answer here..."></textarea>
+    <button onclick="submitAnswer()">Submit Answer</button>
+    <div id="feedback-box" style="display:none">
+      <p id="feedback-text"></p>
+      <p id="decision-text"></p>
+    </div>
+  </div>
+
+  <div id="end-section" style="display:none">
+    <h2 class="ended">Interview Complete! 🎉</h2>
+    <div id="summary-box"></div>
+    <button onclick="location.reload()">Start New Interview</button>
+  </div>
+
+  <script>
+    let sessionId = null;
+
+    async function startInterview() {
+      const name = document.getElementById('name').value;
+      const role = document.getElementById('role').value;
+      const res = await fetch('/api/interview/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ candidateName: name, role })
+      });
+      const data = await res.json();
+      sessionId = data.sessionId;
+      document.getElementById('start-section').style.display = 'none';
+      document.getElementById('interview-section').style.display = 'block';
+      document.getElementById('question-text').textContent = data.question;
+      document.getElementById('topic-info').textContent = 'Topic: ' + data.topic + ' | Difficulty: ' + data.difficulty;
+      document.getElementById('status').textContent = 'Interview Started!';
+    }
+
+    async function submitAnswer() {
+      const answer = document.getElementById('answer-input').value;
+      if (!answer.trim()) return alert('Please enter an answer');
+      const res = await fetch('/api/interview/answer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId, answer })
+      });
+      const data = await res.json();
+      if (data.status === 'END') {
+        document.getElementById('interview-section').style.display = 'none';
+        document.getElementById('end-section').style.display = 'block';
+        document.getElementById('summary-box').innerHTML = '<p>Total Questions: ' + data.summary.totalQuestions + '</p>';
+        return;
+      }
+      document.getElementById('feedback-box').style.display = 'block';
+      document.getElementById('feedback-text').textContent = 'Feedback: ' + data.feedback;
+      document.getElementById('decision-text').textContent = 'Decision: ' + data.decision;
+      document.getElementById('question-text').textContent = data.question;
+      document.getElementById('answer-input').value = '';
+    }
+  </script>
+</body>
+</html>

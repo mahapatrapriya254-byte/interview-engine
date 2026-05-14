@@ -1,0 +1,26 @@
+[
+  {
+    "id": "graph_1",
+    "topic": "graphs",
+    "difficulty": 1,
+    "question": "What is the difference between a directed and undirected graph?",
+    "follow_up": "Can you give a real world example of each?",
+    "keywords": ["directed", "undirected", "edges", "vertices"]
+  },
+  {
+    "id": "graph_2",
+    "topic": "graphs",
+    "difficulty": 2,
+    "question": "What is the difference between BFS and DFS?",
+    "follow_up": "When would you prefer BFS over DFS?",
+    "keywords": ["breadth", "depth", "queue", "stack", "shortest path"]
+  },
+  {
+    "id": "graph_3",
+    "topic": "graphs",
+    "difficulty": 3,
+    "question": "Explain Dijkstra's algorithm and when you would use it.",
+    "follow_up": "What is the time complexity of Dijkstra's algorithm?",
+    "keywords": ["shortest path", "weighted", "priority queue", "greedy", "O(V log V)"]
+  }
+]

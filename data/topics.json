@@ -1,0 +1,7 @@
+{
+  "topics": [
+    { "id": "arrays", "file": "arrays.json", "required": true },
+    { "id": "sorting", "file": "sorting.json", "required": true },
+    { "id": "graphs", "file": "graphs.json", "required": false }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "arr_1",
+    "topic": "arrays",
+    "difficulty": 1,
+    "question": "What is an array and how is it stored in memory?",
+    "follow_up": "Can you explain the difference between static and dynamic arrays?",
+    "keywords": ["contiguous", "index", "memory", "fixed size"]
+  },
+  {
+    "id": "arr_2",
+    "topic": "arrays",
+    "difficulty": 2,
+    "question": "How would you find duplicates in an array in O(n) time?",
+    "follow_up": "What data structure would you use and why?",
+    "keywords": ["hashmap", "hashset", "O(n)", "space tradeoff"]
+  },
+  {
+    "id": "arr_3",
+    "topic": "arrays",
+    "difficulty": 3,
+    "question": "Explain the sliding window technique and give an example.",
+    "follow_up": "When would you use a variable vs fixed size window?",
+    "keywords": ["window", "subarray", "two pointers", "O(n)"]
+  }
+]
