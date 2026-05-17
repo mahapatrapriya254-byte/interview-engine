@@ -4,11 +4,19 @@
     "topic": "arrays",
     "difficulty": 1,
     "question": "What is an array and how is it stored in memory?",
-    "follow_up": "Can you explain the difference between static and dynamic arrays?",
+    "follow_up": "What is the difference between static and dynamic arrays?",
     "keywords": ["contiguous", "index", "memory", "fixed size"]
   },
   {
     "id": "arr_2",
+    "topic": "arrays",
+    "difficulty": 1,
+    "question": "What is the time complexity of accessing an element in an array?",
+    "follow_up": "Why is array access O(1)?",
+    "keywords": ["O(1)", "index", "direct access", "constant"]
+  },
+  {
+    "id": "arr_3",
     "topic": "arrays",
     "difficulty": 2,
     "question": "How would you find duplicates in an array in O(n) time?",
@@ -16,11 +24,27 @@
     "keywords": ["hashmap", "hashset", "O(n)", "space tradeoff"]
   },
   {
-    "id": "arr_3",
+    "id": "arr_4",
+    "topic": "arrays",
+    "difficulty": 2,
+    "question": "How do you reverse an array in place?",
+    "follow_up": "What is the space complexity of your solution?",
+    "keywords": ["swap", "two pointers", "in place", "O(n)"]
+  },
+  {
+    "id": "arr_5",
     "topic": "arrays",
     "difficulty": 3,
-    "question": "Explain the sliding window technique and give an example.",
-    "follow_up": "When would you use a variable vs fixed size window?",
+    "question": "Explain the sliding window technique with an example.",
+    "follow_up": "When would you use variable vs fixed size window?",
     "keywords": ["window", "subarray", "two pointers", "O(n)"]
+  },
+  {
+    "id": "arr_6",
+    "topic": "arrays",
+    "difficulty": 3,
+    "question": "How would you find the maximum sum subarray?",
+    "follow_up": "What is Kadane's algorithm and how does it work?",
+    "keywords": ["Kadane", "dynamic programming", "subarray", "maximum"]
   }
 ]

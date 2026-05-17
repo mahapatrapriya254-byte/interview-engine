@@ -3,24 +3,48 @@
     "id": "graph_1",
     "topic": "graphs",
     "difficulty": 1,
-    "question": "What is the difference between a directed and undirected graph?",
-    "follow_up": "Can you give a real world example of each?",
-    "keywords": ["directed", "undirected", "edges", "vertices"]
+    "question": "What is a graph in data structures?",
+    "follow_up": "What is the difference between directed and undirected graph?",
+    "keywords": ["vertices", "edges", "nodes", "connections"]
   },
   {
     "id": "graph_2",
     "topic": "graphs",
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "What is the difference between BFS and DFS?",
     "follow_up": "When would you prefer BFS over DFS?",
-    "keywords": ["breadth", "depth", "queue", "stack", "shortest path"]
+    "keywords": ["breadth", "depth", "queue", "stack", "level"]
   },
   {
     "id": "graph_3",
     "topic": "graphs",
+    "difficulty": 2,
+    "question": "How does BFS find the shortest path?",
+    "follow_up": "Does BFS work for weighted graphs?",
+    "keywords": ["shortest path", "queue", "level order", "unweighted"]
+  },
+  {
+    "id": "graph_4",
+    "topic": "graphs",
+    "difficulty": 2,
+    "question": "What is a cycle in a graph and how do you detect it?",
+    "follow_up": "How would you detect a cycle in a directed graph?",
+    "keywords": ["cycle", "visited", "DFS", "back edge", "detection"]
+  },
+  {
+    "id": "graph_5",
+    "topic": "graphs",
     "difficulty": 3,
-    "question": "Explain Dijkstra's algorithm and when you would use it.",
+    "question": "Explain Dijkstra's algorithm.",
     "follow_up": "What is the time complexity of Dijkstra's algorithm?",
     "keywords": ["shortest path", "weighted", "priority queue", "greedy", "O(V log V)"]
+  },
+  {
+    "id": "graph_6",
+    "topic": "graphs",
+    "difficulty": 3,
+    "question": "What is a minimum spanning tree and how is it found?",
+    "follow_up": "What is the difference between Kruskal and Prim algorithm?",
+    "keywords": ["spanning tree", "minimum", "Kruskal", "Prim", "greedy"]
   }
 ]

@@ -1,0 +1,65 @@
+{
+  "sessionId": "session_df887859-9216-4ac2-bfcf-50bd71b74331",
+  "history": [
+    {
+      "question": "How would you find duplicates in an array in O(n) time?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 1,
+      "feedback": "Excellent answer"
+    },
+    {
+      "question": "Explain the sliding window technique and give an example.",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you use a variable vs fixed size window?",
+      "answer": "hashmap O(n) space tradeoff hashset",
+      "score": 0.25,
+      "feedback": "Needs improvement"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "sessionId": "session_0ed3d940-6037-4437-93da-55fcf0ba92ae",
+  "history": [
+    {
+      "question": "What is the difference between BFS and DFS?",
+      "answer": "Use a hashmap to track elements and check duplicates in O(n) time",
+      "score": 0,
+      "feedback": "Needs improvement"
+    },
+    {
+      "question": "When would you prefer BFS over DFS?",
+      "answer": "BFS uses a queue and explores level by level. DFS uses a stack and goes deep first.",
+      "score": 0.4,
+      "feedback": "Partial answer"
+    },
+    {
+      "question": "When would you prefer BFS over DFS?",
+      "answer": "BFS is preferred for shortest path problems and level order traversal using a queue",
+      "score": 0.4,
+      "feedback": "Partial answer"
+    }
+  ]
+}

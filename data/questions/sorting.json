@@ -1,26 +1,50 @@
 [
   {
-    "id": "arr_1",
-    "topic": "arrays",
+    "id": "sort_1",
+    "topic": "sorting",
     "difficulty": 1,
-    "question": "What is an array and how is it stored in memory?",
-    "follow_up": "Can you explain the difference between static and dynamic arrays?",
-    "keywords": ["contiguous", "index", "memory", "fixed size"]
+    "question": "What is bubble sort?",
+    "follow_up": "When would you use bubble sort?",
+    "keywords": ["swap", "adjacent", "passes", "simple"]
   },
   {
-    "id": "arr_2",
-    "topic": "arrays",
+    "id": "sort_2",
+    "topic": "sorting",
+    "difficulty": 1,
+    "question": "What is the time complexity of bubble sort?",
+    "follow_up": "What is the best case time complexity?",
+    "keywords": ["O(n2)", "worst case", "best case", "O(n)"]
+  },
+  {
+    "id": "sort_3",
+    "topic": "sorting",
     "difficulty": 2,
-    "question": "How would you find duplicates in an array in O(n) time?",
-    "follow_up": "What data structure would you use and why?",
-    "keywords": ["hashmap", "hashset", "O(n)", "space tradeoff"]
+    "question": "How does merge sort work?",
+    "follow_up": "Why is merge sort considered stable?",
+    "keywords": ["divide", "conquer", "merge", "O(n log n)"]
   },
   {
-    "id": "arr_3",
-    "topic": "arrays",
+    "id": "sort_4",
+    "topic": "sorting",
+    "difficulty": 2,
+    "question": "What is the difference between merge sort and quick sort?",
+    "follow_up": "Which one would you prefer and why?",
+    "keywords": ["merge", "pivot", "stable", "in-place", "O(n log n)"]
+  },
+  {
+    "id": "sort_5",
+    "topic": "sorting",
     "difficulty": 3,
-    "question": "Explain the sliding window technique and give an example.",
-    "follow_up": "When would you use a variable vs fixed size window?",
-    "keywords": ["window", "subarray", "two pointers", "O(n)"]
+    "question": "Explain quick sort with pivot selection.",
+    "follow_up": "How does pivot selection affect performance?",
+    "keywords": ["pivot", "partition", "O(n log n)", "O(n2)", "in-place"]
+  },
+  {
+    "id": "sort_6",
+    "topic": "sorting",
+    "difficulty": 3,
+    "question": "What is heap sort and how does it work?",
+    "follow_up": "What is the space complexity of heap sort?",
+    "keywords": ["heap", "max heap", "O(n log n)", "in-place", "heapify"]
   }
 ]
